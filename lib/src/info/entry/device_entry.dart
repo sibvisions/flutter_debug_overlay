@@ -71,7 +71,7 @@ class DeviceInfoEntry extends StatelessWidget {
       DebugIntProperty("Logical CPU Cores", info.hardwareConcurrency),
       DebugDoubleProperty(
         "Memory Size (GB)",
-        info.deviceMemory,
+        info.deviceMemory?.toDouble(),
         ifNull: "unknown",
       ),
     ];
