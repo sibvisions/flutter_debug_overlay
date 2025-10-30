@@ -58,7 +58,7 @@ class LogItem extends StatelessWidget {
                 icon: const Icon(Icons.copy),
                 tooltip: "Copy message",
                 onPressed: () {
-                  Utils.copyToClipboard(context, value: entry.message);
+                  Utils.copyToClipboard(context, value: entry.message.toString());
                 },
               ),
             ],

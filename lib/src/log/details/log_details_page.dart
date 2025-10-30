@@ -76,7 +76,7 @@ class _LogDetailsPageState extends State<LogDetailsPage> {
         title: const Text("Message"),
         expanded: true,
         expandable: false,
-        child: SelectableText(widget.entry.message),
+        child: SelectableText(widget.entry.message.toString()),
       ),
       if (widget.entry.error != null)
         ExpandableCard(
