@@ -66,7 +66,7 @@ class LogItem extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8.0),
             child: Text(
-              entry.message,
+              entry.message.toString(),
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
